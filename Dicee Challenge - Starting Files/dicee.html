@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Refresh Me</h1>
+      <button type="button" name="button" onclick="buttonClicked()">Click to roll!</button>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="">
+      </div>
+
+    </div>
+
+  <script>
+function randomGenerator(){
+  return Math.floor((Math.random()*6) +1);
+}
+function buttonClicked(){
+var x,y;
+do{
+  x = randomGenerator();
+  y = randomGenerator();
+}while (x == y);
+
+      console.log(document.querySelectorAll("img"));
+      document.querySelectorAll("img")[0].attributes.src.textContent = "images/dice"+x+".png";
+      document.querySelectorAll("img")[1].attributes.src.textContent = "images/dice"+y+".png";
+}
+  </script>
+
+  </body>
+
+  <footer>
+    www 🎲 App Brewery 🎲 com
+  </footer>
+</html>

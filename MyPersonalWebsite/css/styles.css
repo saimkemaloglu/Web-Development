@@ -11,6 +11,14 @@ h1{
   width: 13%;
   margin: 0 auto 0 auto;
 }
+.pp{
+  width: 25%;
+  position: absolute;
+  top:20px;
+  left:40%;
+  right:40%;
+  width: 20%;
+}
 .top{
   background-color: #89b5af;
   padding-top:  100px;
@@ -19,7 +27,8 @@ h1{
 .mid{
   background-color: #ded9c4;
   height: 400px;
-  padding: 40px;
+  padding-top: 400px;
+  position: relative;
 }
 .bot{
   background-color: #96c7c1;
